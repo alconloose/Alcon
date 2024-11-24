@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  zphisher:
+    image: htrtech/zphisher:latest
+    container_name: zphisher
+    network_mode: host
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./auth:/zphisher/auth
+    restart: unless-stopped
