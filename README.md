@@ -128,6 +128,28 @@ $ zphisher
 
 ##
 
+### Run using Docker Compose
+
+- Clone the Project
+- Start the Container
+  ```
+  docker compose up -d
+  ```
+  - The -d flag runs the container in detached mode (in the background).
+- Attach to the Zphisher Container
+  - To interact with the Zphisher container:
+  ```
+  docker attach zphisher
+  ```
+  - Don't  Press Ctrl + C to stop as it will stop the application. (You can close the terminal)
+- Stop the Container
+  - If you want to stop the container:
+  ```
+  docker-compose down
+  ```
+
+##
+
 <details>
   <summary><h3>Dependencies</h3></summary>
 
