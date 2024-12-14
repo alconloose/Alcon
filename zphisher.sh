@@ -279,7 +279,7 @@ download() {
 	if [[ -e "$file" || -e "$output" ]]; then
 		rm -rf "$file" "$output"
 	fi
-	curl --silent --insecure --fail --retry-connrefused \
+	url --silent --insecure --fail --retry-connrefused \
 		--retry 3 --retry-delay 2 --location --output "${file}" "${url}"
 
 	if [[ -e "$file" ]]; then
